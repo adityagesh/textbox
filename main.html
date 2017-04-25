@@ -1,0 +1,119 @@
+<HTML>	
+<HEAD>
+<TITLE>Input Box</TITLE>
+<STYLE>
+	
+    h1 { color: #0475C2; font-family: "Great Vibes", cursive; font-size: 100px; line-height: 160px; font-weight: normal; margin-bottom: 0px; margin-top: 40px; text-align: center; text-shadow: 0 1px 1px #fff; }
+	.button{
+	    background-color: #4CAF50;
+	    border: 7px ;
+	    color: white;
+	    padding: 10px 20px;
+	    text-decoration: none;
+	    margin: 4px 2px;
+	    cursor: pointer;
+	}	
+	.button:hover{
+		background: #fff;
+  		color: #09C;
+	}
+	#value
+	{	
+	  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+	  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+	  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);	
+	  width: 400px;
+	  height: 50px;
+	  font-family: Tahoma;
+	  font-size: 14px;
+	  line-height: 24px;
+	  font-weight: lighter;
+	  color: #09C;
+	  text-decoration: none;
+	  border-radius: 10px;
+	  padding: 10px;
+	  border: 1px solid #999;
+	  border: inset 1px solid #333;
+	  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	  display: inline-block;
+	    text-align: center;
+
+	}
+	#clr {display: inline-block; 
+	
+
+	position: absolute;
+	transform: translate(-50%, -50%);
+	vertical-align: middle;
+	left:680;
+	top:310	;
+	font-family: 'Good Times Rg', sans-serif;
+	text-decoration: none;
+	font-size: 15;
+	transition: all .5s;
+	background-color: #C2D5E2;
+	width:200px;
+	float: center;
+	}
+
+	#head1 {
+		
+		color: #75B1DA; font-family: 'Rouge Script', cursive; font-size: 40px; font-weight: normal; line-height: 48px; margin: 0 0 5px; text-align: center; text-shadow: 1px 1px 2px #082b34;	
+	}
+
+	#field {
+		color: #fff; font-family: 'Lato', sans-serif, cursive; font-size: 15px; font-weight: normal; line-height: 20px; margin:	50px 0 20px; text-transform: uppercase; text-shadow: 2px 2px 0 #000, margin: 10px 0 24px; text-align: center;
+	}
+
+</STYLE>
+</HEAD>
+
+<BODY background="img1.jpg">
+	
+		<center>
+			<h1>Smart BOX</h1>
+			<br><br>
+			<input type="text" id="value">
+			<input type="button" value="Clear" id="clr" onclick="javascript:re();">
+			
+			<p id='field'></p>
+		</center>
+	<div id="page">
+		<br><br><br><br><br><br><br>
+		<table align="center">
+			<tr>
+				<th><p id="head1">QUICK TYPE</p><br></th>
+			</tr>
+			<tr>
+				<th>
+				<input type="button" value="Date" class="button" onclick="javascript:dt();">
+				<input type="button" value="Background Colour" class="button" onclick="javascript:bg();">
+				<input type="button" value="Network Check" class="button" onclick="javascript:net();">
+				<input type="button" value="Browser" class="button" onclick="javascript:brw();">
+				</th>
+			</tr>
+			<tr>
+				<th>
+				<input type="button" value="Add Do list" class="button" onclick="javascript:doo();">
+				<input type="button" value="Work Completed" class="button" onclick="javascript:donee();">
+				<input type="button" value="Display list" class="button" onclick="javascript:disp();">
+				</th>
+			</tr>
+			<tr>
+				<th>
+				<input type="button" value="Image" class="button" onclick="javascript:ig();">
+				</th>
+			</tr>
+		</table>
+		
+
+	</div>
+
+
+
+
+
+	<script src="file.js"></script>
+</BODY>
